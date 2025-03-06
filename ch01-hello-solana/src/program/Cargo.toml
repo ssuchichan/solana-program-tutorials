@@ -1,0 +1,22 @@
+cargo-features = ["edition2024"]
+[package]
+name = "program"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+serde_json = "1.0.140"
+solana-program = "2.2.1"
+
+[dev-dependencies]
+solana-client = "2.2.1"
+solana-program-test = "2.2.1"
+solana-sdk = "2.2.1"
+tokio = "1.43.0"
+
+[[example]]
+name = "client"
+path = "src/examples/client.rs"
