@@ -23,7 +23,7 @@ solana program show Bcs3x7JCccn5oWsQvVEpohGgVyYEZXGVJh8xns5yNRTk
 * 用途：用于构建标准的`Rust`应用或库。
 * 目标（Target）：编译为本机架构（如`x86_64`或`aarch64`）。
 * 不适用于`Solana`智能合约，因为`Solana`运行的是`BPF/SBF`目标架构，而非本机架构。
-### cargo build-bfp（旧版命令，已被build-sbf取代）
+### cargo build-bpf（旧版命令，已被build-sbf取代）
 ### cargo build-sbf
 * 用途：用于编译 `Solana` 智能合约（以前的`Solana`运行时使用`BPF`，现已迁移到`SBF`）。
 * 目标（Target）：`bpfel-unknown-unknown`（`Solana`的`BPF`运行时）。
