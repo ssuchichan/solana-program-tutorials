@@ -1,0 +1,26 @@
+{
+  "name": "ch01-hello-solana",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/client/main.ts",
+    "clean": "npm run clean:program",
+    "build:program": "cargo build-sbf --manifest-path=./src/program/Cargo.toml --sbf-out-dir=dist/program",
+    "clean:program": "cargo clean --manifest-path=./src/program/Cargo.toml && rm -rf ./dist",
+    "test:program": "cargo test-sbf --manifest-path=./src/program/Cargo.toml"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "mz":"^2.7.0"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.8",
+    "@types/mz": "^2.7.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
