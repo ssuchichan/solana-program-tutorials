@@ -58,3 +58,16 @@ solana program show Bcs3x7JCccn5oWsQvVEpohGgVyYEZXGVJh8xns5yNRTk
 * 如果你要部署`Solana`程序，你需要使用 编译后生成的`keypair.json`，而不是`solana-keygen new`生成的普通钱包`keypair`。
 * 如果你要管理一个普通`Solana`账户，使用`solana-keygen new`生成的`keypair.json`才是合适的。
 
+
+### Program ID计算的核心因素
+
+* `Keypair`（私钥）
+  * `Program ID`主要是由你为`Solana`合约部署时所使用的`keypair.json`（私钥）计算得出的。
+  * `Solana`使用该私钥的公钥`（public key）`来作为`Program ID`。
+  * 在`Solana`中，每个`keypair`都对应着一个唯一的公钥，而这个公钥就是该合约的`Program ID`。
+
+
+
+
+
+

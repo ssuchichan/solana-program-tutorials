@@ -9,8 +9,8 @@ fn process_instruction(
     accounts: &[AccountInfo],
     instruction_data: &[u8],
 ) -> ProgramResult {
-    //msg!("Hello Solana! (From Rust!)");
-    msg!("Hello World!");
+    msg!("Hello Solana! (From Rust!)");
+    //msg!("Hello World!");
     Ok(())
 }
 

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/client/main.ts",
+    "start": "ts-node ./src/program/src/client/main.ts",
     "clean": "npm run clean:program",
     "build:program": "cargo build-sbf --manifest-path=./src/program/Cargo.toml --sbf-out-dir=dist/program",
     "clean:program": "cargo clean --manifest-path=./src/program/Cargo.toml && rm -rf ./dist",
